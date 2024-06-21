@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@playwright/browser-chromium": "^1.44.1",
+    "@playwright/test": "^1.44.1",
     "playwright": "^1.44.1",
     "playwright-aws-lambda": "^0.10.0",
     "playwright-chromium": "^1.44.1",
