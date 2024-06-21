@@ -1,0 +1,4 @@
+.terraform
+local
+node_modules
+*.tfstate*

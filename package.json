@@ -1,0 +1,13 @@
+{
+  "name": "playwright-lambda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/browser-chromium": "^1.44.1",
+    "playwright": "^1.44.1",
+    "playwright-aws-lambda": "^0.10.0",
+    "playwright-chromium": "^1.44.1",
+    "playwright-core": "^1.44.1"
+  }
+}
