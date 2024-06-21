@@ -7,7 +7,7 @@ module "playwright_lambda" {
   memory    = 2048
   timeout   = 300
 
-  billing_tag_value = "forms"
+  billing_tag_value = "sre"
 }
 
 resource "aws_ecr_repository" "playwright_lambda" {
@@ -19,7 +19,7 @@ resource "aws_ecr_repository" "playwright_lambda" {
   }
 
   tags = {
-    CostCentre = "forms"
+    CostCentre = "sre"
     Terraform  = true
   }
 }
