@@ -1,7 +1,7 @@
 const playwright = require('playwright-aws-lambda');
 const { expect } = require('@playwright/test');
 
-exports.handler = async (event, context) => {
+exports.handler = async (event, _) => {
   let browser = null;
 
   try {
@@ -13,10 +13,8 @@ exports.handler = async (event, context) => {
 
     // Confirm expected form and submit
     await expect(page.locator('h1')).toHaveText('Healthcheck (email)');
-    await page.waitForTimeout(1000);
-    await page.locator('form#form label[for="1.0"]').click();
-    await page.locator('form#form button[type="button"]').click();
     await page.waitForTimeout(5000);
+    await page.locator('form#form label[for="1.0"]').click();
     await page.locator('form#form button[type="submit"]').click();
   
     // Check form has been submitted

@@ -2,3 +2,4 @@
 local
 node_modules
 *.tfstate*
+*.auto.tfvars
